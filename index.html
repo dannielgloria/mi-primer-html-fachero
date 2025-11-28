@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/icons/favicon.png" />
     <title>Mi blog</title>
 </head>
 <body>
-    <header>
+    <header class="mi-clase">
         <h1>Bienvenidos a mi blog</h1>
         <nav>
             <a href="#inicio">Inicio</a> |
@@ -22,13 +23,13 @@
             <img class="mi-foto" src="./src/images/sensei-dgf.jpg" alt="Fotografia del sensei Daniel Gloria Florencio">
         </section>
     </main>
-    <div id="sobre-mi">
+    <div id="sobre-mi" class="mi-clase">
         <h2>Sobre mi</h2>
         <p>Me encanta enseñar y compartir mis conocimientos en desarrollo web. vendo tacos de canasta en mis tiempos libres, bailo cumbias sonideras, me gusta el perreo hasta el subsuelo, y me dicen el 24 entre la gente importante</p>
         <br>
         <p>Mis pasatiempos son:</p>
         <ul>
-            <li>Programar</li>
+            <li id="mi-id">Programar</li>
             <li>Coleccionar cosas de StarWars</li>
             <li>Salir con mis amigos a bellakear</li>
             <li>Dormir</li>
@@ -53,11 +54,41 @@
         <input type="email" id="email" name="email" required><br>
         <label for="mensaje">Mensaje:</label><br>
         <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
         </form>
+        <!-- Sección de ejemplos de display -->
+    <section id="ejemplos-display">
+        <h2>Ejemplos de display</h2>
+
+        <h3>display: block</h3>
+        <p>Las cajas block ocupan todo el ancho disponible y se colocan una debajo de la otra:</p>
+        <div class="caja caja-block">Caja BLOCK 1</div>
+        <div class="caja caja-block">Caja BLOCK 2</div>
+
+        <h3>display: inline</h3>
+        <p>Las cajas inline se comportan como texto: se ponen una junto a la otra y no respetan width/height:</p>
+        <p>
+            Texto normal
+            <span class="caja caja-inline">INLINE 1</span>
+            más texto
+            <span class="caja caja-inline">INLINE 2</span>
+            y más texto
+            <span class="caja caja-inline">INLINE 3</span>
+        </p>
+
+        <h3>display: inline-block</h3>
+        <p>Las cajas inline-block se alinean una junto a otra, pero sí respetan width y height:</p>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+    </section>
+
     <footer>
         <p>© 2025 Mi blog. Todos los derechos reservados.</p>
     </footer>
+
 
 </body>
 </html>

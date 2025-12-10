@@ -1,5 +1,11 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: Arial, sans-serif;
+}
+
+.monsieur-la-doulaise-regular {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -31,7 +37,7 @@ dentro de la etiqueta en el atributo id="mi-id"
 }
 
 /* Estilo para los enlaces dentro de la clase "mi-clase" combinacion*/
-.mi-clase a{
+a{
     color: #fb8500 
 }
 
@@ -49,7 +55,7 @@ dentro de la etiqueta en el atributo id="mi-id"
 
 /* Estilo base para todas las cajas demo */
 .caja {
-    background-color: #f4f4f4;
+    background-color: #ad1515;
     border: 1px solid #333;
     padding: 8px;
     margin: 6px 0;
@@ -61,6 +67,9 @@ dentro de la etiqueta en el atributo id="mi-id"
 .caja-block {
     display: block;
     width: 100%;
+    position: sticky;
+    top: 0;
+    left: 20px;
 }
 
 /* INLINE: se comportan como texto, no respetan width/height */
@@ -100,6 +109,64 @@ input:hover{
     color: white;
 }
 
-div {
-  background-color: rgba(166, 152, 27, 0.2);
+
+/* ===== Ejemplo Box Model ===== */
+#box-model-demo {
+    margin-top: 40px;
+    padding: 20px;
+    /*border-top: 2px solid #ccc;*/
+}
+
+.box-demo {
+    width: 200px;
+    height: 100px;
+    padding: 20px; /* espacio interno */
+    border: 5px solid #333; /* borde */
+    margin: 15px; /* espacio externo */
+    background-color: #ffb703;
+    color: #000;
+}
+
+#box-sizinf-demo {
+    margin-top: 40px;
+}
+
+.box-cb,
+.box-bb {
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 5px solid #333;
+    background-color: #8ecae6;
+    color: #000;
+}
+
+.box-cb {
+    width: 200px;
+    box-sizing: content-box;
+}
+
+.box-bb {
+    width: 200px;
+    box-sizing: border-box;
+    background-color: #2ca450;
+}
+
+h1 {
+    color: #ffb703;
+}
+
+.mi-clase h1{
+    color: #8ecae6;
+}
+
+li{
+    color: #2ca450 !important;
+}
+
+.mi-clase li{
+    color: #c1121f;
+}
+
+#mi-id {
+    color: #ffb703;
 }

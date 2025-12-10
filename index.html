@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="./src/icons/favicon.png" />
     <title>Mi blog</title>
+    <style>
+        li {
+            color: blue ;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 <body>
     <header class="mi-clase">
         <h1>Bienvenidos a mi blog</h1>
         <nav>
-            <a href="#inicio">Inicio</a> |
+            <a class="monsieur-la-doulaise-regular" href="#inicio">Inicio</a> |
             <a href="#sobre-mi">Acerca de</a> |
             <a href="#contactame">Contacto</a>
         </nav>
@@ -24,7 +35,7 @@
         </section>
     </main>
     <div id="sobre-mi" class="mi-clase">
-        <h2>Sobre mi</h2>
+        <h2 class="monsieur-la-doulaise-regular">Sobre mi</h2>
         <p>Me encanta enseñar y compartir mis conocimientos en desarrollo web. vendo tacos de canasta en mis tiempos libres, bailo cumbias sonideras, me gusta el perreo hasta el subsuelo, y me dicen el 24 entre la gente importante</p>
         <br>
         <p>Mis pasatiempos son:</p>
@@ -41,6 +52,14 @@
             <li>Instagram: <a href="https://www.instagram.com/danniel.gloria">danniel.gloria <span>📷</span></a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/daniel-gloria-florencio">Daniel Gloria <span>💼</span></a></li>
         </ol>   
+    </div>
+
+    <div>
+        <ul>
+            <li style="color: black;">Ejemplos de display</li>
+            <li><a href="#box-model-demo">Demo: Box Model</a></li>
+            <li><a href="#box-sizing-demo">Demo: Box Sizing</a></li>
+        </ul>
     </div>
 
     <div id="contactame">
@@ -84,6 +103,60 @@
             <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
         </div>
     </section>
+
+    <section id="box-model-demo">
+        <h2>Demo: Box Model</h2>
+        <div class="box-demo">
+            Soy una caja de ejemplo
+        </div>
+    </section>
+
+    <section id="box-sizing-demo">
+        <h2>Demo: Box Sizing</h2>
+        <div class="box-cb">
+            Content-box por defecto
+        </div>
+        <div class="box-bb">
+            border-box
+        </div>
+    </section>
+
+    <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
 
     <footer>
         <p>© 2025 Mi blog. Todos los derechos reservados.</p>
